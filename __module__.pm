@@ -26,7 +26,7 @@ task 'setup', sub {
 	my $comments = run "lsb_release -a";
 
 	my $ua = Mojo::UserAgent->new;
-	my $tx = $ua->post("${server}/asset" => form => { name => "$hostname" , label => "$hostfqdn" , objtype_id => 4, has_problems => "no", comment => "$comments" });
+	my $tx = $ua->post("${server}/assets" => form => { name => "$hostname" , label => "$hostfqdn" , objtype_id => 4, has_problems => "no", comment => "$comments" });
 
 	# Return the details to the user
 	if ( $tx->error) { say "FAILED" };
