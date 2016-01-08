@@ -37,5 +37,5 @@ task 'setup', sub {
 
 desc 'Update the rexisting racktables details';
 task 'update', sub {
-	echo "To be implemented";
+	say "To be implemented";
 }
