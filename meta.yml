@@ -1,0 +1,6 @@
+Name: Rex::Racktables::Import
+Description: Pulls the information from a rex client, and will attempt to import into racktables
+Author: xarlos <xarlos@xarlos.me>
+License: Apache 2.0
+Require:
+  - Rex::Ext::ParamLookup
